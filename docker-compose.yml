@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+
+  api:
+    container_name: palantir-api
+    build: ./api
+    ports:
+      - 8000:8000
+    networks:
+      - palantir
+    restart: always
+
+  app-redux:
+    container_name: palantir-app-redux
+    build: ./app-redux
+    ports:
+      - 3000:3000
+    networks:
+      - palantir
+    depends_on:
+      - api
+
+networks:
+  palantir:
+    name: palantir

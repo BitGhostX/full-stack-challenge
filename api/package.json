@@ -1,0 +1,27 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API - Full Stack JS - Code Challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index",
+    "test": "mocha src/test/*.js --timeout 10000"
+  },
+  "author": "Jonathan Arancibia | jjp.arancibia@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "eslint": "^8.54.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.3.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "mocha": "^10.2.0"
+  }
+}
